@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --breakpoint-xs: 375px;
+  --breakpoint-sm: 834px;
+  --breakpoint-lg: 1440px;
+
+  --color-white: #f5f3f3;
+  --color-gray: #888888;
+  --color-darkGray: #263238;
+  --color-black: #15161e;
+  --color-darkOrange: #ff6c00;
+  --color-lightOrange: rgb(255 108 0 / 30%);
+  --color-bgAlpha: rgb(21 22 30 / 95%);
+
+  --font-cinzel: 'Cinzel', serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-orelega: 'Orelega One', serif;
+
+  --background-image-heroDesktop: url('/images/hero-desktop-2x.png');
+  --background-image-heroTablet: url('/images/hero-tablet-2x.png');
+  --background-image-heroMobile: url('/images/hero-mobile-2x.png');
+  --background-image-contactsDesktop: url('/images/contacts-desktop-2x.png');
+  --background-image-contactsTablet: url('/images/contacts-tablet-2x.png');
+  --background-image-contactsMobile: url('/images/contacts-mobile-2x.png');
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', serif;
+  background-color: #15161e;
+  background-image: url(/images/bg-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+:where(
+  a[href],
+  button:not(:disabled),
+  [role='button']:not([aria-disabled='true']),
+  input[type='button']:not(:disabled),
+  input[type='submit']:not(:disabled),
+  input[type='reset']:not(:disabled),
+  label[for],
+  select:not(:disabled),
+  summary
+) {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  width: min(calc(100% - 32px), 1376px);
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 834px) {
+  .container {
+    width: min(calc(100% - 64px), 1376px);
+  }
+}
+
+.section-shell {
+  padding-block: 64px;
+}
+
+@media screen and (min-width: 1440px) {
+  .section-shell {
+    padding-block: 80px;
+  }
+}
+
+.swiper-wrapper {
+  align-items: stretch;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.shadow-card {
+  box-shadow: 0 4px 15px 0 rgba(70, 31, 12, 0.4);
+}
+
+.artists-pagination {
+  position: static !important;
+  display: flex;
+  width: auto !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.artists-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px !important;
+  border-radius: 9999px;
+  background: #666873;
+  opacity: 1;
+  cursor: pointer;
+  transition:
+    width 200ms ease,
+    background-color 200ms ease;
+}
+
+.artists-pagination .swiper-pagination-bullet-active {
+  width: 24px;
+  background: #ff6c00;
+}
