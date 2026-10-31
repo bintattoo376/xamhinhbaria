@@ -1,11 +1,61 @@
 import type { Metadata } from "next";
-import Script from "next/script"; // 1. Import Script từ next/script
+import Script from "next/script";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "BR.INK - Xăm Hình Xỏ Khuyên Bà Rịa",
+  metadataBase: new URL("https://xamhinhbaria.com"),
+  title: {
+    default: "BR.INK - Xăm Hình & Xỏ Khuyên Uy Tín Tại Bà Rịa",
+    template: "%s | BR.INK Studio",
+  },
   description:
-    "Studio xăm hình nghệ thuật và xỏ khuyên chuyên nghiệp tại 258 Cách Mạng Tháng 8, Phường Phước Hiệp, TP. Bà Rịa",
+    "BR.INK Studio chuyên xăm hình nghệ thuật độc bản, xỏ khuyên an toàn và xử lý cover hình xăm cũ tại 258 Cách Mạng Tháng 8, Phường Phước Hiệp, TP. Bà Rịa, Vũng Tàu.",
+  keywords: [
+    "xăm hình Bà Rịa",
+    "xỏ khuyên Bà Rịa",
+    "tiệm xăm uy tín Bà Rịa Vũng Tàu",
+    "xăm nghệ thuật Bà Rịa",
+    "sửa hình xăm cũ Bà Rịa",
+    "BR.INK Tattoo",
+  ],
+  authors: [{ name: "Trình Nguyễn (Bin)" }],
+  creator: "BR.INK Studio",
+  publisher: "BR.INK Studio",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "vi_VN",
+    url: "https://xamhinhbaria.com",
+    title: "BR.INK - Xăm Hình & Xỏ Khuyên Uy Tín Tại Bà Rịa",
+    description:
+      "Studio xăm hình nghệ thuật độc bản và xỏ khuyên chuyên nghiệp hàng đầu tại TP. Bà Rịa, Vũng Tàu.",
+    siteName: "BR.INK Tattoo & Piercing Studio",
+    images: [
+      {
+        url: "https://xamhinhbaria.com/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "BR.INK Tattoo & Piercing Studio Bà Rịa",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BR.INK - Xăm Hình & Xỏ Khuyên Uy Tín Tại Bà Rịa",
+    description:
+      "Studio xăm hình nghệ thuật độc bản và xỏ khuyên chuyên nghiệp tại TP. Bà Rịa, Vũng Tàu.",
+    images: ["https://xamhinhbaria.com/logo.png"],
+  },
   icons: [
     {
       url: "/icons/favicon-dark.svg",
@@ -76,7 +126,6 @@ export default function RootLayout({
       </head>
       <body className="font-cinzel">
         {children}
-        {/* 2. Đặt Script ngay trước khi đóng body với strategy="afterInteractive" hoặc "beforeInteractive" */}
         <Script
           id="json-ld"
           type="application/ld+json"
