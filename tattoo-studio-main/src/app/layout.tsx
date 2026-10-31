@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script"; // 1. Import Script từ next/script
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -26,7 +27,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Cấu trúc Schema Local Business cho studio xăm
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "TattooShop",
@@ -73,13 +73,17 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap"
           rel="stylesheet"
         />
-        {/* Nhúng Schema JSON-LD vào thẻ head */}
-        <script
+      </head>
+      <body className="font-cinzel">
+        {children}
+        {/* 2. Đặt Script ngay trước khi đóng body với strategy="afterInteractive" hoặc "beforeInteractive" */}
+        <Script
+          id="json-ld"
           type="application/ld+json"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
-      </head>
-      <body className="font-cinzel">{children}</body>
+      </body>
     </html>
   );
 }
