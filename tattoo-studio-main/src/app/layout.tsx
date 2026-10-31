@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -27,6 +26,44 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Cấu trúc Schema Local Business cho studio xăm
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "TattooShop",
+    "name": "BR.INK Tattoo & Piercing Studio",
+    "image": "https://xamhinhbaria.com/logo.png",
+    "@id": "https://xamhinhbaria.com",
+    "url": "https://xamhinhbaria.com",
+    "telephone": "+84907879567",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "258 Cách Mạng Tháng 8, Phước Hiệp",
+      "addressLocality": "Bà Rịa",
+      "addressRegion": "Bà Rịa - Vũng Tàu",
+      "countryName": "VN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.499,
+      "longitude": 107.168
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "21:00"
+    },
+    "priceRange": "$$"
+  };
+
   return (
     <html lang="vi" data-scroll-behavior="smooth">
       <head>
@@ -35,6 +72,11 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap"
           rel="stylesheet"
+        />
+        {/* Nhúng Schema JSON-LD vào thẻ head */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </head>
       <body className="font-cinzel">{children}</body>
