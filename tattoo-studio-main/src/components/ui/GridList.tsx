@@ -1,10 +1,15 @@
 import Image from 'next/image';
 import { tattooImages } from '../../data/dataGallery';
 
+interface TattooItem {
+  src: string | { src: string };
+  text: string;
+}
+
 export default function GridList() {
   return (
     <ul className="columns-1 gap-4 sm:columns-2 lg:columns-3 lg:gap-6">
-      {tattooImages.map(({ src, text }, index) => (
+      {(tattooImages as TattooItem[]).map(({ src, text }, index) => (
         <li
           key={typeof src === 'string' ? src : src.src}
           className="mb-4 sm:mb-6 break-inside-avoid overflow-hidden rounded-2xl border border-white/10 bg-black/40 shadow-card transition-transform duration-500 hover:scale-[1.01]"
