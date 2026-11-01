@@ -30,9 +30,9 @@ const FloatingButtons = () => {
         </span>
       </a>
 
-      {/* Nút Nhắn tin Facebook Messenger - Đã cập nhật đúng link */}
+      {/* Nút Nhắn tin Facebook Messenger - Đã cập nhật đúng chuẩn link Facebook cá nhân */}
       <a
-        href="https://m.me/tattoobaria"
+        href="https://www.facebook.com/tattoobaria"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Nhắn tin qua Messenger"
