@@ -47,7 +47,7 @@ const Hero = () => {
         <div className="mx-auto flex max-w-[850px] flex-col items-center pt-[340px] text-center sm:mx-0 sm:items-start sm:pt-[460px] sm:text-left lg:pt-24">
           {/* Tiêu đề chính chuẩn SEO chứa thương hiệu và dịch vụ cốt lõi */}
           <h1 className="font-rye text-[32px] font-normal leading-tight text-white sm:max-w-[700px] sm:text-[56px] sm:leading-[1.1] lg:max-w-[850px] lg:text-[72px]">
-            {t("heroTitle")}
+            <span className="text-darkOrange">BÀ RỊA</span> INK - Studio Xăm Nghệ Thuật & Xỏ Khuyên Chuyên Nghiệp
           </h1>
 
           {/* Mô tả phụ mở rộng từ khóa địa phương và dịch vụ */}
