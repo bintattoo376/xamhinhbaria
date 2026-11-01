@@ -7,16 +7,16 @@ import Contacts from '../components/sections/Contacts';
 import Footer from '../components/sections/Footer';
 
 export const metadata = {
-  title: 'Xăm Hình & Xỏ Khuyên Bà Rịa Uy Tín - BÀ RỊA INK',
+  title: 'Tiệm Xăm Hình & Xỏ Khuyên Uy Tín Tại Bà Rịa - BÀ RỊA INK',
   description: 'Tiệm xăm hình nghệ thuật và xỏ khuyên an toàn hàng đầu tại Bà Rịa Vũng Tàu. Thiết kế độc bản, chuẩn y tế, nghệ sĩ tay nghề cao. Đặt lịch: 0907 879 567.',
 };
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-neutral-950 text-neutral-100 overflow-x-hidden">
-      {/* Thẻ H1 ẩn hoặc hiển thị phục vụ SEO từ khóa chính ngay đầu trang */}
+      {/* Thẻ H1 chuẩn SEO tập trung từ khóa địa phương */}
       <div className="sr-only">
-        <h1>BÀ RỊA INK - Tiệm Xăm Hình & Xỏ Khuyên Uy Tín Nhất Tại Bà Rịa Vũng Tàu</h1>
+        <h1>Tiệm Xăm Hình & Xỏ Khuyên Uy Tín Tại Bà Rịa - BÀ RỊA INK</h1>
       </div>
 
       {/* Khu vực Hero Section chứa tiêu đề chính và các nút CTA */}
