@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Logo from '../../../public/icons/logo.svg';
+import Image from 'next/image';
 
 interface PageHeaderProps {
   navigationLabel: string;
@@ -23,7 +23,16 @@ export default function PageHeader({
           aria-label="BÀ RỊA INK Tattoo Studio home"
           className="inline-flex items-center gap-3 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-darkOrange"
         >
-          <Logo width={40} height={40} aria-hidden="true" />
+          {/* Tăng kích thước logo to hơn nữa (w-[68px] h-[68px]) */}
+          <div className="relative w-[68px] h-[68px] flex-shrink-0">
+            <Image
+              src="/icons/logo.png"
+              alt="BR.INK Logo"
+              fill
+              sizes="(max-width: 768px) 68px, 68px"
+              className="object-contain"
+            />
+          </div>
           <span className="hidden font-rye text-[18px] text-white sm:inline lg:text-[20px]">
             BÀ RỊA INK Tattoo Studio
           </span>

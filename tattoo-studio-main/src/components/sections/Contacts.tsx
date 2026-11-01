@@ -1,17 +1,20 @@
+'use client';
 import ContactForm from '../ui/ContactForm';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Contacts = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="contacts" className="section-shell bg-bgAlpha">
       <div className="container">
         <div className="grid overflow-hidden rounded-3xl border border-white/10 bg-[#191a22] shadow-card lg:grid-cols-[0.95fr_1.05fr]">
           <div className="flex flex-col justify-center px-6 py-10 sm:px-10 lg:px-14 lg:py-16">
             <h2 className="font-rye text-[32px] leading-tight text-white sm:text-[44px] lg:text-[48px]">
-              Đặt lịch hẹn
+              {t("bookingTitle")}
             </h2>
             <p className="mt-4 max-w-[540px] font-playfair text-[17px] leading-relaxed text-[#b8b8b8]">
-              Hãy chia sẻ ý tưởng của bạn. Chúng tôi thường phản hồi trong vòng một
-              ngày làm việc để trao đổi chi tiết.
+              {t("bookingDesc")}
             </p>
             <ContactForm />
           </div>
@@ -23,7 +26,7 @@ const Contacts = () => {
             />
             <div className="relative z-10 flex h-full min-h-[580px] max-w-[440px] flex-col justify-center px-8 py-12 sm:px-12 lg:px-16">
               <h2 className="font-rye text-[32px] text-white sm:text-[44px] lg:text-[48px]">
-                Liên hệ
+                {t("contactTitle")}
               </h2>
               <address className="mt-8 not-italic">
                 <ul className="flex flex-col gap-4 font-playfair text-[17px] leading-relaxed text-white sm:text-[18px]">
@@ -50,8 +53,8 @@ const Contacts = () => {
                     </a>
                   </li>
                   <li className="mt-2">
-                    <span className="block text-[#b8b8b8]">Giờ mở cửa</span>
-                    Thứ Hai – Chủ Nhật, 9:00 AM – 21:00 PM
+                    <span className="block text-[#b8b8b8]">{t("workingHours")}</span>
+                    {t("workingTime")}
                   </li>
                 </ul>
               </address>

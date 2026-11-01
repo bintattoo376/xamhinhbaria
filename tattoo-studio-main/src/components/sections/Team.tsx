@@ -1,4 +1,9 @@
+'use client';
+import { useLanguage } from '@/context/LanguageContext';
+
 const Team = () => {
+  const { t } = useLanguage();
+
   return (
     <section
       id="artists"
@@ -6,7 +11,7 @@ const Team = () => {
     >
       <div className="container">
         <h2 className="mb-10 text-center font-rye text-[32px] text-white sm:mb-12 sm:text-[48px] lg:mb-14">
-          Nghệ sĩ xăm hình
+          {t("artistsTitle")}
         </h2>
         
         <div className="mx-auto flex max-w-[420px] flex-col items-center">
@@ -18,10 +23,10 @@ const Team = () => {
             />
           </div>
           <h3 className="mt-6 font-rye text-[28px] text-darkOrange">
-            Trình Nguyễn ( BIN )
+            {t("artistName")}
           </h3>
           <p className="mt-2 text-center font-playfair text-[17px] text-[#b8b8b8]">
-            Chuyên gia xăm nghệ thuật độc bản, tận tâm mang đến những tác phẩm mang dấu ấn và câu chuyện riêng của bạn.
+            {t("artistDesc")}
           </p>
         </div>
       </div>

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "../styles/globals.css";
+// Điều chỉnh đường dẫn import phù hợp với vị trí thư mục components của bạn
+import FloatingButtons from "../components/ui/FloatingButtons";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://xamhinhbaria.com"),
@@ -56,20 +59,6 @@ export const metadata: Metadata = {
       "Studio xăm hình nghệ thuật độc bản và xỏ khuyên chuyên nghiệp tại TP. Bà Rịa, Vũng Tàu.",
     images: ["https://xamhinhbaria.com/logo.png"],
   },
-  icons: [
-    {
-      url: "/icons/favicon-dark.svg",
-      media: "(prefers-color-scheme: light)",
-      rel: "icon",
-      type: "image/svg",
-    },
-    {
-      url: "/icons/favicon-light.svg",
-      media: "(prefers-color-scheme: dark)",
-      rel: "icon",
-      type: "image/svg",
-    },
-  ],
 };
 
 export default function RootLayout({
@@ -125,13 +114,19 @@ export default function RootLayout({
         />
       </head>
       <body className="font-cinzel">
-        {children}
-        <Script
-          id="json-ld"
-          type="application/ld+json"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
-        />
+        <LanguageProvider>
+          {children}
+          
+          {/* Thanh công cụ nổi liên hệ nhanh */}
+          <FloatingButtons />
+
+          <Script
+            id="json-ld"
+            type="application/ld+json"
+            strategy="beforeInteractive"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+          />
+        </LanguageProvider>
       </body>
     </html>
   );

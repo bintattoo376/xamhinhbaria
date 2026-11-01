@@ -5,10 +5,12 @@ import Navbar from '../ui/Navbar';
 import Logo from '../../../public/icons/logo.png';
 import Modal from '../ui/Modal';
 import MobileMenu from '../ui/MobileMenu';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const toggleMenu = () => {
     setIsMenuOpen(prev => !prev);
@@ -42,20 +44,34 @@ const Hero = () => {
           </button>
         </header>
 
-        <div className="mx-auto flex max-w-[800px] flex-col items-center pt-[360px] text-center sm:mx-0 sm:items-start sm:pt-[500px] sm:text-left lg:pt-28">
-          <h1 className="font-rye text-[36px] font-normal leading-none text-white sm:max-w-[650px] sm:text-[64px] sm:leading-[1.08] lg:max-w-[800px] lg:text-[80px] lg:leading-none">
-            BÀ RỊA INK Tattoo Studio
+        <div className="mx-auto flex max-w-[850px] flex-col items-center pt-[340px] text-center sm:mx-0 sm:items-start sm:pt-[460px] sm:text-left lg:pt-24">
+          {/* Tiêu đề chính chuẩn SEO chứa thương hiệu và dịch vụ cốt lõi */}
+          <h1 className="font-rye text-[32px] font-normal leading-tight text-white sm:max-w-[700px] sm:text-[56px] sm:leading-[1.1] lg:max-w-[850px] lg:text-[72px]">
+            {t("heroTitle")}
           </h1>
-          <p className="mt-6 max-w-[380px] font-playfair text-[18px] leading-relaxed text-white sm:mt-8 sm:text-[22px] lg:text-[24px]">
-            &quot;Hình xăm là sự thể hiện của tự do và cá tính.&quot;
+
+          {/* Mô tả phụ mở rộng từ khóa địa phương và dịch vụ */}
+          <p className="mt-6 max-w-[500px] font-playfair text-[18px] leading-relaxed text-neutral-300 sm:mt-6 sm:text-[20px] lg:text-[22px]">
+            {t("heroDesc")}
           </p>
-          <button
-            type="button"
-            onClick={() => setIsOpen(true)}
-            className="mt-10 flex min-h-14 w-full max-w-[320px] items-center justify-center rounded-full border-2 border-darkOrange bg-transparent px-8 text-[20px] text-darkOrange transition-colors hover:bg-darkOrange hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-black sm:w-auto sm:min-w-[300px] lg:mt-12 lg:text-[22px]"
-          >
-            Đặt lịch hẹn
-          </button>
+
+          {/* Cụm nút CTA */}
+          <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto lg:mt-10">
+            <button
+              type="button"
+              onClick={() => setIsOpen(true)}
+              className="flex min-h-14 w-full sm:w-auto sm:min-w-[240px] items-center justify-center rounded-full border-2 border-darkOrange bg-darkOrange px-8 text-[20px] text-black font-semibold transition-colors hover:bg-transparent hover:text-darkOrange focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-4 focus-visible:ring-offset-black lg:text-[22px]"
+            >
+              {t("bookNow")}
+            </button>
+
+            <a
+              href="/gallery"
+              className="flex min-h-14 w-full sm:w-auto sm:min-w-[240px] items-center justify-center rounded-full border-2 border-white bg-transparent px-8 text-[20px] text-white font-semibold transition-colors hover:bg-white hover:text-black focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-darkOrange focus-visible:ring-offset-4 focus-visible:ring-offset-black lg:text-[22px]"
+            >
+              {t("viewGallery")}
+            </a>
+          </div>
         </div>
         {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen} />}
       </div>

@@ -1,12 +1,16 @@
+'use client';
 import ServiceCard from '../ui/ServiceCard';
 import { dataServices } from '../../data/dataServices';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Services = () => {
+  const { t } = useLanguage();
+
   return (
-    <section id="services" className="section-shell bg-black">
+    <section id="gallery" className="section-shell bg-black">
       <div className="container">
         <h2 className="mb-10 text-center font-rye text-[32px] text-white sm:mb-12 sm:text-[48px] lg:mb-14">
-          Dịch vụ của chúng tôi
+          {t("servicesTitle")}
         </h2>
         <div>
           <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Logo from '../../../public/icons/logo.svg';
+import Image from 'next/image';
 
 const footerLinks = [
   { href: '/#about', label: 'Về chúng tôi' },
@@ -22,7 +22,14 @@ const Footer = () => {
               aria-label="BÀ RỊA INK Tattoo Studio home"
               className="inline-flex items-center gap-4 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-darkOrange"
             >
-              <Logo width={44} height={44} aria-hidden="true" />
+              <div className="relative w-[44px] h-[44px] flex-shrink-0">
+                <Image
+                  src="/icons/logo.png"
+                  alt="BR.INK Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
               <span className="font-rye text-[22px] text-white">
                 BÀ RỊA INK Tattoo Studio
               </span>
