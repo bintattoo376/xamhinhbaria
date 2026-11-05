@@ -261,9 +261,9 @@ export default function BlogPostContent() {
                 </div>
 
                 <div className="rounded-2xl bg-darkOrange/10 border border-darkOrange/40 p-6 space-y-2">
-                  <h3 className="font-rye text-xl text-darkOrange">Lời Khuyên Từ BR.INK Studio Bà Rịa</h3>
+                  <h3 className="font-rye text-xl text-darkOrange">{t("firstTattooAdviceTitle")}</h3>
                   <p className="text-[#d1d1d1]">
-                    Hãy ghé trực tiếp cơ sở của chúng tôi tại 258 Cách Mạng Tháng 8, Phường Phước Hiệp, TP. Bà Rịa để được tư vấn phác thảo bản vẽ độc bản phù hợp nhất với phong cách của bạn!
+                    {t("firstTattooAdviceDesc")}
                   </p>
                 </div>
               </>
