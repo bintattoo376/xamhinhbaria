@@ -374,7 +374,6 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  // Đọc giá trị từ localStorage nếu có, mặc định là "vi"
   const [lang, setLangState] = useState<Language>(() => {
     if (typeof window !== "undefined") {
       const savedLang = localStorage.getItem("br_ink_lang") as Language;
