@@ -220,9 +220,9 @@ export default function BlogPostContent() {
                 </div>
 
                 <div className="rounded-2xl bg-darkOrange/10 border border-darkOrange/40 p-6 space-y-2">
-                  <h3 className="font-rye text-xl text-darkOrange">{t("quickRuleTitle")}</h3>
+                  <h3 className="font-rye text-xl text-darkOrange">{t("piercingQuickRuleTitle")}</h3>
                   <p className="text-[#d1d1d1]">
-                    {t("quickRuleDesc")}
+                    {t("piercingQuickRuleDesc")}
                   </p>
                 </div>
               </>
@@ -291,10 +291,10 @@ export default function BlogPostContent() {
                 </div>
 
                 <div className="space-y-6">
-                  <h2 className="font-rye text-2xl text-white pt-2">Lộ Trình Phục Hồi Hình Xăm Mới Trong 14 Ngày Đầu Tiên</h2>
+                  <h2 className="font-rye text-2xl text-white pt-2">{t("roadmapTitle")}</h2>
                   <div className="space-y-4">
                     <div className="border-l-2 border-darkOrange pl-4 space-y-2">
-                      <h3 className="text-white font-semibold text-xl font-rye">Giai Đoạn Đầu: Cần Lưu Ý Những Gì?</h3>
+                      <h3 className="text-white font-semibold text-xl font-rye">{t("phase1Title")}</h3>
                       <ul className="list-disc pl-5 space-y-1 text-[#d1d1d1]">
                         <li>{t("phase1Desc1")}</li>
                         <li>{t("phase1Desc2")}</li>
@@ -304,7 +304,7 @@ export default function BlogPostContent() {
                     </div>
 
                     <div className="border-l-2 border-darkOrange pl-4 space-y-2">
-                      <h3 className="text-white font-semibold text-xl font-rye">Giai Đoạn Bong Vảy: Cách Xử Lý Khi Hình Xăm Bị Ngứa</h3>
+                      <h3 className="text-white font-semibold text-xl font-rye">{t("phase2Title")}</h3>
                       <ul className="list-disc pl-5 space-y-1 text-[#d1d1d1]">
                         <li>{t("phase2Desc1")}</li>
                         <li>{t("phase2Desc2")}</li>
@@ -313,7 +313,7 @@ export default function BlogPostContent() {
                     </div>
 
                     <div className="border-l-2 border-darkOrange pl-4 space-y-2">
-                      <h3 className="text-white font-semibold text-xl font-rye">Chăm Sóc Lâu Dài Sau 30 Ngày</h3>
+                      <h3 className="text-white font-semibold text-xl font-rye">{t("phase3Title")}</h3>
                       <ul className="list-disc pl-5 space-y-1 text-[#d1d1d1]">
                         <li>{t("phase3Desc1")}</li>
                         <li>{t("phase3Desc2")}</li>
