@@ -140,7 +140,7 @@ const translations = {
     dont1: "Không sờ tay khi chưa rửa tay.",
     dont2: "Không xoay hoặc kéo khuyên, không tự ý tháo hay thay khuyên quá sớm.",
     dont3: "Không dùng cồn, oxy già hoặc hóa chất mạnh, không bôi sản phẩm không rõ nguồn gốc.",
-    dont4: "Không let tóc, quần áo, khẩu trang, tai nghe hoặc mũ bảo hiểm cọ vào lỗ xỏ.",
+    dont4: "Không để tóc, quần áo, khẩu trang, tai nghe hoặc mũ bảo hiểm cọ vào lỗ xỏ.",
 
     envTitle: "SINH HOẠT & MÔI TRƯỜNG",
     env1: "Hạn chế vận động mạnh và ra quá nhiều mồ hôi, tránh va đập hoặc kéo vào khuyên.",
@@ -172,7 +172,7 @@ const translations = {
     bookingTitle: "Đặt lịch hẹn",
     bookingDesc: "Hãy chia sẻ ý tưởng của bạn. Chúng tôi thường phản hồi trong vòng một ngày làm việc để trao đổi chi tiết.",
     workingHours: "Giờ mở cửa",
-    workingTime: "Thứ Hai – Chủ Nhật, 9:00 AM – 21:00 PM",
+    workingTime: "Monday – Sunday, 9:00 AM – 21:00 PM",
 
     // Contact Form Fields
     fullName: "Họ và tên",
