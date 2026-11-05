@@ -230,7 +230,7 @@ export default function BlogPostContent() {
               /* --- NỘI DUNG BÀI VIẾT: CÁCH CHUẨN BỊ CHO BUỔI XĂM ĐẦU TIÊN --- */
               <>
                 <p className="font-semibold text-white text-lg">
-                  Chuẩn bị kỹ lưỡng trước buổi xăm đầu tiên sẽ giúp bạn yên tâm hơn và có trải nghiệm an toàn, thoải mái.
+                  {t("firstTattooIntro")}
                 </p>
 
                 <div className="rounded-2xl bg-black/40 border border-darkOrange/30 p-6 space-y-4">
