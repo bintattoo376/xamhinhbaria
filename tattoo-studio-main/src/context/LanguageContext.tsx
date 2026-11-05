@@ -140,7 +140,7 @@ const translations = {
     dont1: "Không sờ tay khi chưa rửa tay.",
     dont2: "Không xoay hoặc kéo khuyên, không tự ý tháo hay thay khuyên quá sớm.",
     dont3: "Không dùng cồn, oxy già hoặc hóa chất mạnh, không bôi sản phẩm không rõ nguồn gốc.",
-    dont4: "Không để tóc, quần áo, khẩu trang, tai nghe hoặc mũ bảo hiểm cọ vào lỗ xỏ.",
+    dont4: "Không let tóc, quần áo, khẩu trang, tai nghe hoặc mũ bảo hiểm cọ vào lỗ xỏ.",
 
     envTitle: "SINH HOẠT & MÔI TRƯỜNG",
     env1: "Hạn chế vận động mạnh và ra quá nhiều mồ hôi, tránh va đập hoặc kéo vào khuyên.",
@@ -164,8 +164,8 @@ const translations = {
     heal4: "Khi nào cần hỗ trợ y tế: Đau dữ dội, sưng nhiều, đỏ lan nhanh, có mủ, sốt hoặc ớn lạnh, khó thở. Không tự ý dùng kháng sinh hoặc thuốc chống viêm.",
 
     locationsTitle: "CÁC VỊ TRÍ XỎ TẠI BR.INK",
-    quickRuleTitle: "QUY TẮC NHỚ NHANH",
-    quickRuleDesc: "Rửa tay trước khi chạm • Vệ sinh đúng cách • Không xoay khuyên • Không tháo khuyên quá sớm • Tránh va chạm và ma sát • Giữ vùng xỏ sạch và khô • Kiên nhẫn trong suốt quá trình hồi phục.",
+    piercingQuickRuleTitle: "QUY TẮC NHỚ NHANH LỖ XỎ",
+    piercingQuickRuleDesc: "Rửa tay trước khi chạm • Vệ sinh đúng cách • Không xoay khuyên • Không tháo khuyên quá sớm • Tránh va chạm và ma sát • Giữ vùng xỏ sạch và khô • Kiên nhẫn trong suốt quá trình hồi phục.",
 
     // Contact & Booking Section
     contactTitle: "Liên hệ",
@@ -343,8 +343,8 @@ const translations = {
     heal4: "When to seek medical help: Severe pain, heavy swelling, rapidly spreading redness, pus, fever or chills, breathing difficulty. Do not self-prescribe antibiotics or anti-inflammatory drugs.",
 
     locationsTitle: "PIERCING PLACEMENTS AT BR.INK",
-    quickRuleTitle: "QUICK REMINDER RULES",
-    quickRuleDesc: "Wash hands before touching • Clean properly • Do not twist jewelry • Do not remove jewelry too early • Avoid bumps and friction • Keep area clean and dry • Be patient throughout healing.",
+    piercingQuickRuleTitle: "QUICK REMINDER RULES",
+    piercingQuickRuleDesc: "Wash hands before touching • Clean properly • Do not twist jewelry • Do not remove jewelry too early • Avoid bumps and friction • Keep area clean and dry • Be patient throughout healing.",
 
     // Contact & Booking Section
     contactTitle: "Contact Us",
