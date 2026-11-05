@@ -178,7 +178,7 @@ export default function BlogPostContent() {
                   </ul>
                 </div>
 
-                <div className="rounded-2xl bg-black/40 border border-darkOrange/30 p-6 space-y-3">
+                <div className="rounded-2xl bg-black/40 border border-white/10 p-6 space-y-3">
                   <h2 className="font-rye text-2xl text-darkOrange">{t("jewelryTitle")}</h2>
                   <p className="text-[#d1d1d1]">
                     {t("jewelryText")}
