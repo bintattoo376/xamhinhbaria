@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const translations = {
   vi: {
@@ -374,7 +374,23 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Language>("vi");
+  // Đọc giá trị từ localStorage nếu có, mặc định là "vi"
+  const [lang, setLangState] = useState<Language>(() => {
+    if (typeof window !== "undefined") {
+      const savedLang = localStorage.getItem("br_ink_lang") as Language;
+      if (savedLang && translations[savedLang]) {
+        return savedLang;
+      }
+    }
+    return "vi";
+  });
+
+  const setLang = (newLang: Language) => {
+    setLangState(newLang);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("br_ink_lang", newLang);
+    }
+  };
 
   const t = (key: keyof typeof translations.vi) => {
     return translations[lang][key] || key;
