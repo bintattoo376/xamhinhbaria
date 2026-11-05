@@ -59,7 +59,7 @@ const translations = {
     blogTagline: "Câu chuyện, nghệ thuật & chăm sóc",
     blogMainTitle: "Nhật Ký May Mắn",
     blogMainDesc: "Lời khuyên xăm hình chân thành, cảm hứng sáng tạo và những câu chuyện từ bên trong studio của chúng tôi.",
-    studioStoriesTag: "Từ studio",
+    studioStoriesTag: "From the studio",
     latestStoriesTitle: "Bài viết mới nhất",
     latestStoriesDesc: "Kiến thức thực tế giúp bạn cảm thấy tự tin trước, trong và sau buổi xăm.",
     ctaTag: "Ý tưởng của bạn bắt đầu từ đây",
@@ -167,12 +167,28 @@ const translations = {
     piercingQuickRuleTitle: "QUY TẮC NHỚ NHANH LỖ XỎ",
     piercingQuickRuleDesc: "Rửa tay trước khi chạm • Vệ sinh đúng cách • Không xoay khuyên • Không tháo khuyên quá sớm • Tránh va chạm và ma sát • Giữ vùng xỏ sạch và khô • Kiên nhẫn trong suốt quá trình hồi phục.",
 
+    // Blog Post: Cách chuẩn bị cho buổi xăm đầu tiên
+    firstTattooTitle: "1. Trước Buổi Xăm: Cần Chuẩn Bị Những Gì?",
+    firstTattooDesc1: "Ngủ đủ giấc: Đảm bảo cơ thể ở trạng thái tỉnh táo, giúp tăng khả năng chịu đau và giữ tinh thần thoải mái.",
+    firstTattooDesc2: "Ăn uống đầy đủ: Tránh để bụng đói đi xăm để phòng ngừa tụt huyết áp. Hãy ăn nhẹ trước khi đến tiệm khoảng 1-2 tiếng.",
+    firstTattooDesc3: "Chăm sóc da tự nhiên: Không tự cạo hay wax lông vùng da xăm tại nhà vì thợ xăm chuyên nghiệp sẽ thao tác bằng dụng cụ vô khuẩn chuyên dụng.",
+    firstTattooDesc4: "Trang phục thoải mái: Mặc quần áo rộng rãi, dễ bộc lộ vị trí cần xăm mà không cọ xát vào vùng da mới hoàn thành.",
+  
+    tabooTitle: "2. Những Điều Cấm Kỵ Cần Tránh Tuyệt Đối Trước Khi Xăm",
+    tabooDesc1: "Không uống rượu bia hoặc chất kích thích: Tránh hoàn toàn trong vòng 24 giờ trước khi xăm vì cồn làm loãng máu, gây chảy nhiều máu và làm nhòe mực.",
+    tabooDesc2: "Không phơi nắng gắt: Tránh để vùng da xăm bị cháy nắng hoặc bỏng rát trước ngày thực hiện.",
+
+    bringTitle: "3. Nên Mang Theo Những Gì Khi Đến Studio?",
+    bringDesc1: "Đồ ăn nhẹ hoặc kẹo ngọt để bổ sung năng lượng nhanh chóng nếu thời gian xăm kéo dài.",
+    bringDesc2: "Tai nghe cá nhân để thư giãn trong lúc nghệ sĩ tập trung hoàn thiện tác phẩm.",
+    bringDesc3: "Tinh thần cởi mở để trao đổi chi tiết về ý tưởng và vị trí mong muốn.",
+
     // Contact & Booking Section
     contactTitle: "Liên hệ",
     bookingTitle: "Đặt lịch hẹn",
     bookingDesc: "Hãy chia sẻ ý tưởng của bạn. Chúng tôi thường phản hồi trong vòng một ngày làm việc để trao đổi chi tiết.",
     workingHours: "Giờ mở cửa",
-    workingTime: "Monday – Sunday, 9:00 AM – 21:00 PM",
+    workingTime: "Thứ Hai – Chủ Nhật, 9:00 AM – 21:00 PM",
 
     // Contact Form Fields
     fullName: "Họ và tên",
@@ -345,6 +361,22 @@ const translations = {
     locationsTitle: "PIERCING PLACEMENTS AT BR.INK",
     piercingQuickRuleTitle: "QUICK REMINDER RULES",
     piercingQuickRuleDesc: "Wash hands before touching • Clean properly • Do not twist jewelry • Do not remove jewelry too early • Avoid bumps and friction • Keep area clean and dry • Be patient throughout healing.",
+
+    // Blog Post: Cách chuẩn bị cho buổi xăm đầu tiên
+    firstTattooTitle: "1. Before Your Session: How to Prepare?",
+    firstTattooDesc1: "Get enough sleep: Ensure your body is well-rested to increase pain tolerance and stay relaxed.",
+    firstTattooDesc2: "Eat well: Avoid going on an empty stomach to prevent low blood pressure. Have a light meal 1-2 hours before coming.",
+    firstTattooDesc3: "Natural skincare: Do not shave or wax the tattoo area at home; professional artists will handle it with sterile tools.",
+    firstTattooDesc4: "Comfortable clothing: Wear loose clothing that easily exposes the tattoo area without rubbing against fresh ink.",
+  
+    tabooTitle: "2. Absolute Things to Avoid Before Getting Tattooed",
+    tabooDesc1: "No alcohol or stimulants: Avoid completely for 24 hours before your session as alcohol thinned blood causes excessive bleeding and blurs ink.",
+    tabooDesc2: "No harsh sun exposure: Avoid getting sunburned or blistered before your appointment.",
+
+    bringTitle: "3. What to Bring to the Studio?",
+    bringDesc1: "Light snacks or candy to quickly boost your energy if the session runs long.",
+    bringDesc2: "Personal headphones to relax while the artist focuses on your piece.",
+    bringDesc3: "An open mindset to discuss details about your ideas and placement.",
 
     // Contact & Booking Section
     contactTitle: "Contact Us",

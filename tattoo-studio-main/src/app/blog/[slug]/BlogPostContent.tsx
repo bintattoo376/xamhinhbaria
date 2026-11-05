@@ -234,29 +234,29 @@ export default function BlogPostContent() {
                 </p>
 
                 <div className="rounded-2xl bg-black/40 border border-darkOrange/30 p-6 space-y-4">
-                  <h2 className="font-rye text-2xl text-darkOrange">1. Trước Buổi Xăm: Cần Chuẩn Bị Những Gì?</h2>
+                  <h2 className="font-rye text-2xl text-darkOrange">{t("firstTattooTitle")}</h2>
                   <ul className="list-disc pl-5 space-y-2 text-[#d1d1d1]">
-                    <li><strong>Ngủ đủ giấc:</strong> Đảm bảo cơ thể ở trạng thái tỉnh táo, giúp tăng khả năng chịu đau và giữ tinh thần thoải mái.</li>
-                    <li><strong>Ăn uống đầy đủ:</strong> Tránh để bụng đói đi xăm để phòng ngừa tụt huyết áp. Hãy ăn nhẹ trước khi đến tiệm khoảng 1-2 tiếng.</li>
-                    <li><strong>Chăm sóc da tự nhiên:</strong> Không tự cạo hay wax lông vùng da xăm tại nhà vì thợ xăm chuyên nghiệp sẽ thao tác bằng dụng cụ vô khuẩn chuyên dụng.</li>
-                    <li><strong>Trang phục thoải mái:</strong> Mặc quần áo rộng rãi, dễ bộc lộ vị trí cần xăm mà không cọ xát vào vùng da mới hoàn thành.</li>
+                    <li>{t("firstTattooDesc1")}</li>
+                    <li>{t("firstTattooDesc2")}</li>
+                    <li>{t("firstTattooDesc3")}</li>
+                    <li>{t("firstTattooDesc4")}</li>
                   </ul>
                 </div>
 
                 <div className="space-y-6">
-                  <h2 className="font-rye text-2xl text-white pt-2">2. Những Điều Cấm Kỵ Cần Tránh Tuyệt Đối Trước Khi Xăm</h2>
+                  <h2 className="font-rye text-2xl text-white pt-2">{t("tabooTitle")}</h2>
                   <ul className="list-disc pl-5 space-y-2 text-[#d1d1d1]">
-                    <li><strong>Không uống rượu bia hoặc chất kích thích:</strong> Tránh hoàn toàn trong vòng 24 giờ trước khi xăm vì cồn làm loãng máu, gây chảy nhiều máu và làm nhòe mực.</li>
-                    <li><strong>Không phơi nắng gắt:</strong> Tránh để vùng da xăm bị cháy nắng hoặc bỏng rát trước ngày thực hiện.</li>
+                    <li>{t("tabooDesc1")}</li>
+                    <li>{t("tabooDesc2")}</li>
                   </ul>
                 </div>
 
                 <div className="rounded-2xl bg-black/40 border border-white/10 p-6 space-y-3">
-                  <h2 className="font-rye text-2xl text-white">3. Nên Mang Theo Những Gì Khi Đến Studio?</h2>
+                  <h2 className="font-rye text-2xl text-white">{t("bringTitle")}</h2>
                   <ul className="list-disc pl-5 space-y-2 text-[#d1d1d1]">
-                    <li>Đồ ăn nhẹ hoặc kẹo ngọt để bổ sung năng lượng nhanh chóng nếu thời gian xăm kéo dài.</li>
-                    <li>Tai nghe cá nhân để thư giãn trong lúc nghệ sĩ tập trung hoàn thiện tác phẩm.</li>
-                    <li>Tinh thần cởi mở để trao đổi chi tiết về ý tưởng và vị trí mong muốn.</li>
+                    <li>{t("bringDesc1")}</li>
+                    <li>{t("bringDesc2")}</li>
+                    <li>{t("bringDesc3")}</li>
                   </ul>
                 </div>
 
