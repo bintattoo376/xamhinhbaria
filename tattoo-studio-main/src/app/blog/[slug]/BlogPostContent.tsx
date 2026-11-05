@@ -230,7 +230,7 @@ export default function BlogPostContent() {
               /* --- NỘI DUNG BÀI VIẾT: CÁCH CHUẨN BỊ CHO BUỔI XĂM ĐẦU TIÊN --- */
               <>
                 <p className="font-semibold text-white text-lg">
-                  Buổi xăm hình đầu tiên luôn mang lại nhiều cảm xúc hồi hộp và hào hứng. Tuy nhiên, một tác phẩm hoàn hảo không chỉ đến từ tay nghề của thợ xăm mà còn phụ thuộc rất nhiều vào sự chuẩn bị kỹ lưỡng của bạn trước khi bước chân lên bàn xăm tại BR.INK Studio Bà Rịa.
+                  Chuẩn bị kỹ lưỡng trước buổi xăm đầu tiên sẽ giúp bạn yên tâm hơn và có trải nghiệm an toàn, thoải mái.
                 </p>
 
                 <div className="rounded-2xl bg-black/40 border border-darkOrange/30 p-6 space-y-4">
@@ -261,9 +261,9 @@ export default function BlogPostContent() {
                 </div>
 
                 <div className="rounded-2xl bg-darkOrange/10 border border-darkOrange/40 p-6 space-y-2">
-                  <h3 className="font-rye text-xl text-darkOrange">Lời Khuyên Cho Buổi Xăm Đầu Tiên</h3>
+                  <h3 className="font-rye text-xl text-darkOrange">{t("firstTattooAdviceTitle")}</h3>
                   <p className="text-[#d1d1d1]">
-                    Hãy giữ tinh thần thoải mái, trao đổi rõ mong muốn với nghệ sĩ và làm theo hướng dẫn chăm sóc sau xăm để tác phẩm lành tốt.
+                    {t("firstTattooAdviceDesc")}
                   </p>
                 </div>
               </>
