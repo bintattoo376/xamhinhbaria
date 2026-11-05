@@ -183,6 +183,9 @@ const translations = {
     bringDesc2: "Tai nghe cá nhân để thư giãn trong lúc nghệ sĩ tập trung hoàn thiện tác phẩm.",
     bringDesc3: "Tinh thần cởi mở để trao đổi chi tiết về ý tưởng và vị trí mong muốn.",
 
+    firstTattooAdviceTitle: "Lời Khuyên Từ BR.INK Studio Bà Rịa",
+    firstTattooAdviceDesc: "Hãy ghé trực tiếp cơ sở của chúng tôi tại 258 Cách Mạng Tháng 8, Phường Phước Hiệp, TP. Bà Rịa để được tư vấn phác thảo bản vẽ độc bản phù hợp nhất với phong cách của bạn!",
+
     // Contact & Booking Section
     contactTitle: "Liên hệ",
     bookingTitle: "Đặt lịch hẹn",
@@ -377,6 +380,9 @@ const translations = {
     bringDesc1: "Light snacks or candy to quickly boost your energy if the session runs long.",
     bringDesc2: "Personal headphones to relax while the artist focuses on your piece.",
     bringDesc3: "An open mindset to discuss details about your ideas and placement.",
+
+    firstTattooAdviceTitle: "Advice From BR.INK Studio Ba Ria",
+    firstTattooAdviceDesc: "Visit our studio directly at 258 Cach Mang Thang 8, Phuoc Hiep Ward, Ba Ria City for a custom consultation tailored best to your style!",
 
     // Contact & Booking Section
     contactTitle: "Contact Us",

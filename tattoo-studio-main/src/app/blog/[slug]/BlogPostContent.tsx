@@ -261,9 +261,9 @@ export default function BlogPostContent() {
                 </div>
 
                 <div className="rounded-2xl bg-darkOrange/10 border border-darkOrange/40 p-6 space-y-2">
-                  <h3 className="font-rye text-xl text-darkOrange">{t("firstTattooAdviceTitle")}</h3>
+                  <h3 className="font-rye text-xl text-darkOrange">Lời Khuyên Cho Buổi Xăm Đầu Tiên</h3>
                   <p className="text-[#d1d1d1]">
-                    {t("firstTattooAdviceDesc")}
+                    Hãy giữ tinh thần thoải mái, trao đổi rõ mong muốn với nghệ sĩ và làm theo hướng dẫn chăm sóc sau xăm để tác phẩm lành tốt.
                   </p>
                 </div>
               </>
