@@ -168,6 +168,7 @@ const translations = {
     piercingQuickRuleDesc: "Rửa tay trước khi chạm • Vệ sinh đúng cách • Không xoay khuyên • Không tháo khuyên quá sớm • Tránh va chạm và ma sát • Giữ vùng xỏ sạch và khô • Kiên nhẫn trong suốt quá trình hồi phục.",
 
     // Blog Post: Cách chuẩn bị cho buổi xăm đầu tiên
+    firstTattooIntro: "Chuẩn bị kỹ lưỡng trước buổi xăm đầu tiên sẽ giúp bạn yên tâm hơn và có trải nghiệm an toàn, thoải mái.",
     firstTattooTitle: "1. Trước Buổi Xăm: Cần Chuẩn Bị Những Gì?",
     firstTattooDesc1: "Ngủ đủ giấc: Đảm bảo cơ thể ở trạng thái tỉnh táo, giúp tăng khả năng chịu đau và giữ tinh thần thoải mái.",
     firstTattooDesc2: "Ăn uống đầy đủ: Tránh để bụng đói đi xăm để phòng ngừa tụt huyết áp. Hãy ăn nhẹ trước khi đến tiệm khoảng 1-2 tiếng.",
@@ -366,6 +367,7 @@ const translations = {
     piercingQuickRuleDesc: "Wash hands before touching • Clean properly • Do not twist jewelry • Do not remove jewelry too early • Avoid bumps and friction • Keep area clean and dry • Be patient throughout healing.",
 
     // Blog Post: Cách chuẩn bị cho buổi xăm đầu tiên
+    firstTattooIntro: "Thorough preparation before your first tattoo session will give you peace of mind and ensure a safe, comfortable experience.",
     firstTattooTitle: "1. Before Your Session: How to Prepare?",
     firstTattooDesc1: "Get enough sleep: Ensure your body is well-rested to increase pain tolerance and stay relaxed.",
     firstTattooDesc2: "Eat well: Avoid going on an empty stomach to prevent low blood pressure. Have a light meal 1-2 hours before coming.",
