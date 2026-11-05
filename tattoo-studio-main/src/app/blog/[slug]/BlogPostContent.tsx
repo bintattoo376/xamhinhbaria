@@ -323,23 +323,23 @@ export default function BlogPostContent() {
                 </div>
 
                 <div className="rounded-2xl bg-black/40 border border-white/10 p-6 space-y-4">
-                  <h2 className="font-rye text-2xl text-white">Xăm Hình Xong Kiêng Ăn Gì Và Xăm Hình Ăn Trứng Được Không?</h2>
+                  <h2 className="font-rye text-2xl text-white">{t("tattooDietTitle")}</h2>
                   <ul className="list-disc pl-5 space-y-1 text-[#d1d1d1]">
-                    <li><strong>ĐỒ NẾP:</strong> Kiêng 1–2 tuần. Không ăn xôi, bánh chưng, bánh rán và các món từ gạo nếp.</li>
-                    <li><strong>THỊT BÒ:</strong> Kiêng 1–2 tuần. Hạn chế thịt bò trong thời gian hình xăm đang hồi phục để tránh sẹo.</li>
-                    <li><strong>THỊT GÀ, VỊT:</strong> Kiêng 1–2 tuần. Hạn chế thịt gà và vịt trong giai đoạn đầu sau khi xăm.</li>
-                    <li><strong>RAU MUỐNG:</strong> Kiêng 2–4 tuần. Không ăn rau muống trong thời gian da đang tái tạo tránh bị lồi.</li>
-                    <li><strong>HẢI SẢN:</strong> Kiêng 1–2 tuần. Hạn chế tôm, cua, ghẹ, mực và các loại hải sản trong giai đoạn đầu. Nếu có tiền sử dị ứng cần đặc biệt lưu ý.</li>
-                    <li><strong>TRỨNG:</strong> Kiêng 3–7 ngày. Hạn chế trứng gà và trứng vịt trong những ngày đầu để màu xăm đều đẹp.</li>
-                    <li><strong>RƯỢU BIA:</strong> Kiêng ít nhất 1 tuần. Không uống rượu bia trong giai đoạn hình xăm đang hồi phục.</li>
-                    <li><strong>ĐỒ CAY NÓNG VÀ NHIỀU DẦU MỠ:</strong> Hạn chế trong tuần đầu.</li>
+                    <li>{t("dietStickyRice")}</li>
+                    <li>{t("dietBeef")}</li>
+                    <li>{t("dietChicken")}</li>
+                    <li>{t("dietWaterSpinach")}</li>
+                    <li>{t("dietSeafood")}</li>
+                    <li>{t("dietEggs")}</li>
+                    <li>{t("dietAlcohol")}</li>
+                    <li>{t("dietSpicy")}</li>
                   </ul>
 
                   {/* Khung Quy tắc nhớ nhanh màu cam */}
                   <div className="mt-6 rounded-2xl bg-darkOrange/10 border border-darkOrange/40 p-6 space-y-2">
-                    <h3 className="font-rye text-xl text-darkOrange">Quy Tắc Nhớ Nhanh Dinh Dưỡng Sau Khi Xăm</h3>
+                    <h3 className="font-rye text-xl text-darkOrange">{t("quickRuleTitle")}</h3>
                     <p className="text-white font-semibold">
-                      &ldquo;Nếp, Bò, Gà kiêng 1-2 tuần; Rau muống 2-4 tuần; Hải sản, Trứng, Rượu bia tạm ngưng; Cay nóng bớt ngay tuần đầu.&rdquo;
+                      &ldquo;{t("quickRuleDesc")}&rdquo;
                     </p>
                   </div>
                 </div>

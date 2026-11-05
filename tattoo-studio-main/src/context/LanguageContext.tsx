@@ -106,6 +106,19 @@ const translations = {
     dietTattoo2: "Rau muống: Kiêng 2-4 tuần",
     dietTattoo3: "Rượu bia, đồ chua (chanh/cam/tắc): Tránh trong 1 tuần đầu",
 
+    // Phần Kiêng Ăn Tiếng Việt Chi Tiết
+    tattooDietTitle: "Xăm Hình Xong Kiêng Ăn Gì Và Xăm Hình Ăn Trứng Được Không?",
+    dietStickyRice: "ĐỒ NẾP: Kiêng 1–2 tuần. Không ăn xôi, bánh chưng, bánh rán và các món từ gạo nếp.",
+    dietBeef: "THỊT BÒ: Kiêng 1–2 tuần. Hạn chế thịt bò trong thời gian hình xăm đang hồi phục để tránh sẹo.",
+    dietChicken: "THỊT GÀ, VỊT: Kiêng 1–2 tuần. Hạn chế thịt gà và vịt trong giai đoạn đầu sau khi xăm.",
+    dietWaterSpinach: "RAU MUỐNG: Kiêng 2–4 tuần. Không ăn rau muống trong thời gian da đang tái tạo tránh bị lồi.",
+    dietSeafood: "HẢI SẢN: Kiêng 1–2 tuần. Hạn chế tôm, cua, ghẹ, mực và các loại hải sản trong giai đoạn đầu. Nếu có tiền sử dị ứng cần đặc biệt lưu ý.",
+    dietEggs: "TRỨNG: Kiêng 3–7 ngày. Hạn chế trứng gà và trứng vịt trong những ngày đầu để màu xăm đều đẹp.",
+    dietAlcohol: "RƯỢU BIA: Kiêng ít nhất 1 tuần. Không uống rượu bia trong giai đoạn hình xăm đang hồi phục.",
+    dietSpicy: "ĐỒ CAY NÓNG VÀ NHIỀU DẦU MỠ: Hạn chế trong tuần đầu.",
+    quickRuleTitle: "Quy Tắc Nhớ Nhanh Dinh Dưỡng Sau Khi Xăm",
+    quickRuleDesc: "“Nếp, Bò, Gà kiêng 1-2 tuần; Rau muống 2-4 tuần; Hải sản, Trứng, Rượu bia tạm ngưng; Cay nóng bớt ngay tuần đầu.”",
+
     // Blog Post: Chăm sóc xỏ khuyên
     piercingNotice: "Lỗ xỏ mới cần được chăm sóc đúng cách trong suốt quá trình hồi phục. Lưu ý, trang này không cung cấp chẩn đoán y tế.",
     importantNote: "CHÚ Ý QUAN TRỌNG",
@@ -271,6 +284,19 @@ const translations = {
     dietTattoo1: "Sticky rice, beef, chicken, seafood: Avoid for the first 1-2 weeks",
     dietTattoo2: "Water spinach: Avoid for 2-4 weeks",
     dietTattoo3: "Alcohol, acidic foods (lemon/orange/kumquat): Avoid during the first week",
+
+    // Phần Kiêng Ăn Tiếng Anh Chi Tiết
+    tattooDietTitle: "What to Avoid Eating After Getting a Tattoo & Can You Eat Eggs?",
+    dietStickyRice: "STICKY RICE: Avoid for 1–2 weeks. Do not eat sticky rice, chung cake, and sticky rice dishes.",
+    dietBeef: "BEEF: Avoid for 1–2 weeks. Limit beef during recovery to prevent scarring.",
+    dietChicken: "CHICKEN & DUCK: Avoid for 1–2 weeks during the initial healing stage.",
+    dietWaterSpinach: "WATER SPINACH: Avoid for 2–4 weeks. Do not eat water spinach while the skin is regenerating to prevent raised scars.",
+    dietSeafood: "SEAFOOD: Avoid for 1–2 weeks. Limit shrimp, crab, squid, and seafood during early stages, especially if you have allergies.",
+    dietEggs: "EGGS: Avoid for 3–7 days. Limit eggs in the first few days to ensure even and beautiful pigmentation.",
+    dietAlcohol: "ALCOHOL: Avoid for at least 1 week while the tattoo is healing.",
+    dietSpicy: "SPICY & OILY FOODS: Limit during the first week.",
+    quickRuleTitle: "Quick Nutrition Rule After Tattooing",
+    quickRuleDesc: "Sticky rice, beef, chicken for 1-2 weeks; Water spinach 2-4 weeks; Seafood, eggs, alcohol on hold; Spicy foods cut down the first week.",
 
     // Blog Post: Chăm sóc xỏ khuyên
     piercingNotice: "New piercings need proper care throughout the healing process. Note: This page does not provide medical diagnosis.",
