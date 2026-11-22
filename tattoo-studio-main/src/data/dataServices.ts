@@ -3,7 +3,15 @@ import iconServices2 from '../../public/images/services-02.png';
 import iconServices3 from '../../public/images/services-03.png';
 import iconServices4 from '../../public/images/services-04.png';
 
-export const dataServices = [
+export interface ServiceItem {
+  id: number;
+  imageSrc: typeof iconServices1;
+  title: string;
+  text: string;
+  href?: string;
+}
+
+export const dataServices: ServiceItem[] = [
   {
     id: 1,
     imageSrc: iconServices1,
@@ -15,6 +23,7 @@ export const dataServices = [
     imageSrc: iconServices2,
     title: 'Xỏ khuyên chuyên nghiệp',
     text: 'Tư vấn vị trí xỏ tinh tế, trải nghiệm xỏ khuyên an toàn, sạch sẽ và tỉ mỉ từ đầu đến cuối.',
+    href: '/xo-khuyen-piercing',
   },
   {
     id: 3,

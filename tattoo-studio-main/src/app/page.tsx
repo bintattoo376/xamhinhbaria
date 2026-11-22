@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Hero from '../components/sections/Hero';
 import About from '../components/sections/About';
 import Services from '../components/sections/Services';
@@ -37,6 +38,14 @@ export default function Home() {
           Nếu bạn đang tìm kiếm một <strong>tiệm xăm uy tín tại Bà Rịa</strong> hay địa chỉ <strong>xỏ khuyên an toàn ở Vũng Tàu</strong>, 
           BÀ RỊA INK là điểm đến hàng đầu. Chúng tôi cung cấp dịch vụ xăm độc bản (Custom Tattoo), xử lý cover hình xăm cũ và xỏ khuyên chuẩn y tế với trang sức Titanium cao cấp.
         </p>
+        <div className="mt-5 flex justify-center font-playfair">
+          <Link
+            href="/xo-khuyen-piercing"
+            className="rounded-lg bg-darkOrange px-6 py-2.5 text-sm sm:text-base font-semibold text-black transition-opacity hover:opacity-90"
+          >
+            Xem Bảng Giá Xỏ Khuyên
+          </Link>
+        </div>
       </section>
 
       {/* Đội ngũ nghệ sĩ */}
