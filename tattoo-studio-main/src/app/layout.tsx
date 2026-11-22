@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   creator: "BR.INK Studio",
   publisher: "BR.INK Studio",
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/icons/app-icon.png",
+    apple: "/icons/app-icon.png",
   },
   appleWebApp: {
     capable: true,
