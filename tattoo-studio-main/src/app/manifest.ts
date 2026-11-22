@@ -3,7 +3,7 @@ import type { MetadataRoute } from 'next';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'BÀ RỊA INK - Xăm Hình & Xỏ Khuyên',
-    short_name: 'BR.INK',
+    short_name: 'BÀ RỊA INK',
     description:
       'Tiệm xăm hình nghệ thuật và xỏ khuyên chuẩn y tế tại Bà Rịa - Vũng Tàu. Đặt lịch: 0907 879 567.',
     start_url: '/',
@@ -13,13 +13,13 @@ export default function manifest(): MetadataRoute.Manifest {
     orientation: 'portrait',
     icons: [
       {
-        src: '/icon.png',
+        src: '/logo.png',
         sizes: '512x512',
         type: 'image/png',
-        purpose: 'maskable',
+        purpose: 'any',
       },
       {
-        src: '/icon.png',
+        src: '/logo.png',
         sizes: '192x192',
         type: 'image/png',
         purpose: 'any',

@@ -30,10 +30,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Trình Nguyễn (Bin)" }],
   creator: "BR.INK Studio",
   publisher: "BR.INK Studio",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "BR.INK",
+    title: "BÀ RỊA INK",
   },
   robots: {
     index: true,
