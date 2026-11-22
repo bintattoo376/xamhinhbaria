@@ -1,9 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "../styles/globals.css";
 // Điều chỉnh đường dẫn import phù hợp với vị trí thư mục components của bạn
 import FloatingButtons from "../components/ui/FloatingButtons";
 import { LanguageProvider } from "@/context/LanguageContext";
+
+export const viewport: Viewport = {
+  themeColor: "#0a0a0a",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://xamhinhbaria.com"),
@@ -24,6 +30,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Trình Nguyễn (Bin)" }],
   creator: "BR.INK Studio",
   publisher: "BR.INK Studio",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "BR.INK",
+  },
   robots: {
     index: true,
     follow: true,
